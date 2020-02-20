@@ -89,7 +89,7 @@ class Blog extends AbstractController
         $Post = $em->find(Post::class, $id);
         
         return $this->render('posts/show.html.twig',[
-            "post" => $Posts
+            "post" => $Post
         ]);
     }
     
