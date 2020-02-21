@@ -10,7 +10,7 @@ use App\Entity\Post;
 class Blog extends AbstractController
 {    
     /**
-     * @Route("/", name="list")
+     * @Route("/", name="list", methods={"GET"})
      */
     public function listPosts()
     {
